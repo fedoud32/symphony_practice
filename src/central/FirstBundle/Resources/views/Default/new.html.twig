@@ -1,0 +1,49 @@
+{% extends "::base.html.twig" %}
+
+
+{% block head %}
+    <link type="text/css" href={{ asset('images/icons/css/font-awesome.css') }} rel="stylesheet">
+    <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'
+          rel='stylesheet'>
+    {% endblock %}
+
+
+{% block body %}
+
+
+    <div class="span6">
+        <div class="media user">
+            <a class="media-avatar pull-left" href="#">
+                <img src={{ asset('images/user.png') }}>
+            </a>
+            <div class="media-body">
+                <h3 class="media-title">
+                    John Donga
+                </h3>
+                <p>
+                    <small class="muted">Pakistan</small></p>
+                <div class="media-option btn-group shaded-icon">
+                    <button class="btn btn-small">
+                        <i class="icon-envelope"></i>
+                    </button>
+                    <button class="btn btn-small">
+                        <i class="icon-share-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block javascripts %}
+
+        <script src={{ asset('scripts/jquery-1.9.1.min.js') }} type="text/javascript"></script>
+        <script src={{ asset('scripts/jquery-ui-1.10.1.custom.min.js') }} type="text/javascript"></script>
+        <script src={{ asset('bootstrap/js/bootstrap.min.js') }} type="text/javascript"></script>
+        <script src={{ asset('scripts/datatables/jquery.dataTables.js') }} type="text/javascript"></script>
+
+
+        {% endblock %}
+
+
+
+
+{% endblock %}

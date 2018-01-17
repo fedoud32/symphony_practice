@@ -1,0 +1,4 @@
+services:
+#    central_first.example:
+#        class: central\FirstBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

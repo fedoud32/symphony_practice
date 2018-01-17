@@ -1,0 +1,30 @@
+{% extends "::base.html.twig" %}
+{% block title %}
+    {{ parent() }}
+    todo
+{% endblock %}
+
+
+{% block body %}
+    {% for indice, var in app.session.get('mesTodos') %}
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                {{ indice }}:{{ var }} <a href="{{ path ('delete_page',{'key':indice })}}">supprimer</a>
+
+            </li>
+        </ul>
+    {% endfor %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

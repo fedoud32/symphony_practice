@@ -1,0 +1,27 @@
+central_first_homepage:
+    path:     /
+    defaults: { _controller: centralFirstBundle:Default:index }
+
+central_second_homepage:
+    path:     /index2/{var}/{var2}
+    defaults: { _controller: centralFirstBundle:Default:index2 }
+
+central_page:
+    path:     /todo
+    defaults: { _controller: centralFirstBundle:todo:list }
+
+Ajout_page:
+    path:     /ajout/{key}/{value}
+    defaults: { _controller: centralFirstBundle:todo:ajout }
+
+update_page:
+    path:     /update/{key}/{value}
+    defaults: { _controller: centralFirstBundle:todo:ajout }
+
+delete_page:
+    path:     /delete/{key}
+    defaults: { _controller: centralFirstBundle:todo:delete }
+
+personne_page:
+    path:     /fedi
+    defaults: { _controller: centralFirstBundle:personne:fedi }

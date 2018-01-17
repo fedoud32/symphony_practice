@@ -1,0 +1,9 @@
+
+<dl>
+    {% for cle, valeur in app.session.get('todos') %}
+    <dt>{{ cle }}   </dt>
+    <dd>{{ valeur }}</dd>
+    {% else %}
+        session not found
+    {% endfor %}
+</dl>

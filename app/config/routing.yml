@@ -1,0 +1,7 @@
+central_first:
+    resource: "@centralFirstBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
